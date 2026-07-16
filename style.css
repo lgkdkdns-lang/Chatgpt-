@@ -1,0 +1,113 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#87ceeb, #dff6ff);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    touch-action: none;
+}
+
+#game {
+    width: 100vw;
+    height: 75vh;
+    max-width: 800px;
+    margin: auto;
+    background: #7ec850;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #333;
+}
+
+
+#score {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+#player {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #3498db;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px #555;
+}
+
+
+.trash {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #795548;
+    border-radius: 8px;
+}
+
+
+.cat {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #555;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.cat::before {
+    content:"🐱";
+    font-size:35px;
+    position:absolute;
+    top:-4px;
+}
+
+
+#gameOver {
+    display:none;
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    color:white;
+    text-align:center;
+    padding-top:120px;
+    font-size:25px;
+}
+
+
+button {
+    font-size:30px;
+    padding:15px;
+    margin:5px;
+    border-radius:20px;
+    border:none;
+    background:white;
+    box-shadow:0 4px 8px #555;
+    touch-action:none;
+}
+
+
+button:active {
+    transform:scale(0.9);
+}
+
+
+#controls {
+    text-align:center;
+    margin-top:15px;
+}
